@@ -1,0 +1,8 @@
+About Osxome
+North Knight Software
+December 2, 2008 10:00 pm
+<p>Osxome (pronounced like awesome) was created to be an extremely simple and straightforward piece of journalling or blogging software. The primary goal of the software was to be more secure than a database driven journaling system when deployed in a shared-hosting environment.</p>
+
+<p>On a shared hosting server, it is usually trivial for another user on the same server to access your SQL database's password. Because most content management packages rely on a database such as MySQL or PostgreSQL to serve content,  potential attacker might be able to modify the data once he or she has the database password. Using text files, there is significantly less risk, because the modification of content is based on file permissions, which are usually more secure. This article outlines some of the concerns about hosting on a shared hosting server: <a href="http://shiflett.org/articles/shared-hosting"> http://shiflett.org/articles/shared-hosting </a>.
+
+<p>Osxome was inspired by <a href="http://www.blosxom.com/">Blosxom</a>, and derives its name from that software. The main idea taken from Blosxom is that of using plain-text files instead of a database. While this idea is fairly superficial, you may find it to be quite liberating as a user.</p>

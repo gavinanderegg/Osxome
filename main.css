@@ -1,0 +1,152 @@
+/*
+	Osxome v0.2, a text-based news/journal system
+	by North Knight Software: http://www.northknight.ca/
+	Released under the MIT License:
+	  http://www.opensource.org/licenses/mit-license.php
+	See LICENSE for more information
+	Last modified December 2, 2008
+*/
+
+
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+#header
+{
+	padding: 32px;
+	margin-bottom: 64px;
+	font-family: Helvetica, Arial, Verdana, sans-serif;
+	padding-bottom: 32px;
+	background-color: #336;
+	border-bottom: 4px solid #669;
+}
+
+#header h1 a
+{
+	font-weight: bold;
+	font-size: 28pt;
+	color: #FFF;
+	text-decoration: none;
+}
+
+#header h2 a
+{
+	font-weight: bold;
+	font-size: 22pt;
+	color: #669;
+	margin-bottom: -12px;
+	text-decoration: none;
+}
+
+
+#content
+{
+	font-family: Georgia, Times, "Times New Roman", serif;
+	padding-bottom: 48px;
+}
+
+#content h3
+{
+	margin: 38px 28px -12px 28px;
+	font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 18pt;
+	color: #C33;
+}
+
+#content h4
+{
+	margin: 24px 12px -18px 44px;
+	font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 12pt;
+	color: #668;
+}
+
+#content p
+{
+	margin: 22px 44px;
+	font-size: 12pt;
+	line-height: 120%;
+	color: #666;
+}
+
+#content ul, #content ol
+{
+	margin-left: 68px;
+}
+
+#content li
+{
+	list-style-position: inside;
+	line-height: 140%;
+	color: #666;
+}
+
+#content hr
+{
+	margin: 52px 52px 48px 52px;
+}
+
+#bottom
+{
+	clear: both;
+	margin-top: 32px;
+	padding: 24px;
+	border-top: 1px solid #558;
+	border-bottom: 1px solid #558;
+	background: #EEE;
+	font-family: Tahoma, Verdana, Helvetica, Arial, sans-serif;
+	font-size: 10pt;
+	color: #036;
+	text-align: right;
+}
+
+#bottom a
+{
+	color: #036;
+}
+
+#content p.teamFavs
+{
+	margin-top: -12px;
+}
+
+
+#content #newsNav
+{
+	margin: 28px;
+	margin-top: 68px;
+	padding: 20px 48px;
+	background: #EEE;
+	border: 1px solid #558;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#content #newsNav span.olderNav
+{
+	float: right;
+	width: 30%;
+	text-align: right;
+}
+
+#content #newsNav span.newerNav
+{
+	float: left;
+	width: 30%;
+	text-align: left;
+}
+
+#content #newsNav hr.newsNavBottom
+{
+	color: #EEE;
+	height: 1px;
+	border: 0;
+	background: #EEE;
+	clear: both;
+	margin: 0;
+}

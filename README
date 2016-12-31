@@ -1,0 +1,49 @@
+Osxome v0.2, a text-based news/journal system
+by North Knight Software: http://www.northknight.ca/
+Released under the MIT License:
+  http://www.opensource.org/licenses/mit-license.php
+See LICENSE for more information
+Last modified December 2, 2008
+
+
+What Osxome is:
+Osxome is a simple journaling system based on plain-text files.
+
+
+What Osxome is not:
+Osxome is not a technically impressive, feature rich content management package. If that's what you need, you might consider Drupal [ http://drupal.org/ ].
+
+
+About Osxome:
+Osxome (pronounced like awesome) was created to be an extremely simple and straightforward piece of journalling or blogging software. The primary goal of the software was to be more secure than a database driven journaling system when deployed in a shared-hosting environment.
+
+Osxome was inspired by Blosxom [ http://www.blosxom.com/ ], and derives its name from that software. The main idea taken from Blosxom is that of using plain-text files instead of a database. While this idea is fairly simple, you may find it to be quite liberating as a user.
+
+Osxome requires PHP 5 or greater.
+
+
+Usage:
+To install Osxome:
+	- unarchive it and place it in the appropriate directory on your server.
+	- modify the config.php file.
+		- if you do not have Apache's Allowoverride or mod_rewrite, you may have to use the alternate indHref and viewHref settings.
+	- rename the htacess file to ".htaccess" without the quotes.
+	- create a new file ending in .txt inside of the ./news directory.
+
+The config file is in the INI format [ http://en.wikipedia.org/wiki/INI_file ].
+
+New news entries should be placed in the ./news directory. These files take the following format:
+
+	- The first line is the title for the post.
+	- The second is an optional user name for the entry. Leave this line blank if you don't want to show the user name.
+	- The third line is an optional time for the post. It must be in a format parsable by PHP's strtotime() function. If this line is left blank the file's last-modified time is used instead. Note: if this line is used, the config.php's timeOffset variable is NOT taken into account.
+	- The rest of the the file is (X)HTML data which will be inserted as the article's body.
+
+
+Please see the ./EXAMPLES directory for two examples of this format.
+
+
+The templates for displaying the markup are in the ./templates directory.
+
+
+Thank you for trying Osxome!

@@ -1,0 +1,17 @@
+# Osxome v0.2, a text-based news/journal system
+# by North Knight Software: http://www.northknight.ca/
+# Released under the MIT License:
+#   http://www.opensource.org/licenses/mit-license.php
+# See LICENSE for more information
+# Last modified December 2, 2008
+
+Options -Indexes
+Options +FollowSymLinks
+DirectoryIndex index.php
+
+<IfModule mod_rewrite.c>
+	RewriteEngine on
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteRule ^(.*[^/])(/?)$ index.php?q=$1 [L,QSA]
+</IfModule>
